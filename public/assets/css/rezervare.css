@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 350px;
+}
+
+.intro h1 {
+    padding-top: 150px;
+    text-align: center;
+    color: #000;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    width: 30rem;
+    margin: 0 auto;
+    background: #fffefc;
+    background-image: linear-gradient(to right, #fffefc, #333, #fffefc);
+}
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    width: 10rem;
+    margin: 25px auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* --------------------------------------------------------------------*/
+
+.fadeScroll {
+    background-color: rgba(0,0,0);
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 100vh;
+    padding: 0 5%;
+    height: 5rem;
+    background-color: #fffefc;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #000;
+}
+
+.links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-burger .line {
+     width: 30px;
+     height: 3px;
+     background-color: #000;
+     margin: 7px;
+     border-radius: 3px;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 800px) {
+    .col-3 {
+        text-align: center;
+    }
+    .col-3 strong {
+        width: 70%;
+        text-align: center;
+        float: none;
+        padding: 0 0 30px 0;
+        display: block;
+    }
+    .row {
+        width: 600px;
+    }
+    .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 5rem;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,0.8);
+        overflow: hidden;
+        transition: 0.5s ease-out;
+    }
+    .links a {
+        color: rgb(184, 184, 184);
+    }
+    .icon-burger {
+        display: block;
+    }
+    .toggle {
+        bottom: 0;
+    }
+}
+
+/*----------------------------------------------------------------------- */
+
+
+.tableS {
+    color: #444;
+    font-size: 20px;
+}
+
+.tableScolor {
+    color: green;
+}
+
+.first {
+    padding-left: 10px;
+}
+
+.second {
+    padding-left: 19px;
+}
+
+.restaurant {
+    height: 550px;   
+    background: #f8e3b9;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.space {
+    padding:60px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tableS p {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.fa-square {
+    font-size: 3em;
+}
+
+.fa-circle {
+    font-size: 1.6em;
+}
+
+.wrapper {
+    padding: 50px 20px 100px 0;
+    width: 650px;
+    z-index: 2;
+}
+
+.tips, .tips2 {
+    width: 30%;
+    padding-bottom: 300px;
+    z-index: 1;
+}
+
+.tips h2, .tips2 h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 110px;
+}
+
+.tips p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+#second h2 {
+    width: 40%;
+    padding-top: 100px;
+    line-height: 60px;
+}
+
+.input-form {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#second {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields, .msg {
+    width: 48%;
+}
+
+.input-fields .input, .msg textarea {
+    margin: 10px 0;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+}
+
+.btn, .btn2, .btn3 {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.btn2, .btn3 {
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+    display: none;
+}
+
+.btn3 {
+    display: block;
+    margin-top: 70px;
+}
+
+.btn3::placeholder {
+    color: #fff;
+}
+
+.btn2::placeholder {
+    color: #fff;
+}
+
+option:disabled {
+    color: red;
+}
+
+.warning0, .warning1, .warning2, .warning3, .warning4 {
+    color: rgb(182, 36, 36);
+    display: none;
+}
+
+.block {
+    height: 150px;
+}
+
+footer {
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    margin: 20px 30px 0 30px;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+    color: #444;
+}
+
+footer i:hover {
+    cursor: pointer;
+    color:#4267B2;
+    transform: rotate(360deg) scale(1.5);
+    border-radius: 7px;
+}
+
+footer .fa-facebook:hover {
+    color: #4267B2;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer .fa-instagram-square:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer .fa-twitter:hover {
+    color: #1DA1F2;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .input-form {
+        flex-direction: column;
+    }
+    .tips, .tips2 {
+        padding: 0 0 0 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .restaurant {
+        display: none;
+    }
+    .wrapper {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        height: 350px;
+    }
+    .wrapper {
+        padding-bottom: 0;
+    }
+    .contact-form {
+        flex-direction: column;
+    }
+    .tips2 {
+        padding-top: 300px;
+    }
+    h2 {
+        text-align: center;
+    }
+    .msg textarea {
+        height: 80px;
+    }
+    .input-fields, .msg {
+        width: 100%;
+    }
+    .intro h1 {
+        font-size: 50px;
+    }
+}

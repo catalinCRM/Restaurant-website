@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    height: 2000px;
+    background: url("http://www.casadoina.ro/wp-content/themes/casadoina/images/events_inner_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fadeScroll {
+    background-color: rgba(0,0,0);
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    width: 15rem;
+    margin: 0 auto;
+    background: #fffefc;
+    background-image: linear-gradient(to right, #fffefc, #333, #fffefc);
+}
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    width: 10rem;
+    margin: 25px auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 100vh;
+    padding: 0 5%;
+    height: 5rem;
+    background-color: #fffefc;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #000;
+}
+
+.links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-burger .line {
+     width: 30px;
+     height: 3px;
+     background-color: #000;
+     margin: 7px;
+     border-radius: 3px;
+}
+
+.block {
+    height: 150px;
+    width: 100%;
+}
+
+.titlu {
+    font-weight: 400;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.row {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.col {
+    height: 100%;
+    width: 40%;
+}
+
+.row h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+.col h2 {
+    padding-left: 40px;
+    font-weight: 500;
+    font-weight: 2rem;
+    color: #6e5829;
+}
+
+.col p {
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+
+.choice {
+    padding-bottom: 20px;
+}
+
+#descriere  {
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 20px;
+}
+
+footer {
+    position: relative;
+    top: 4%;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    margin: 20px 30px 0 30px;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+    color: #444;
+}
+
+footer i:hover {
+    cursor: pointer;
+    color:#4267B2;
+    transform: rotate(360deg) scale(1.5);
+    border-radius: 7px;
+}
+
+footer .fa-facebook:hover {
+    color: #4267B2;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer .fa-instagram-square:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer .fa-twitter:hover {
+    color: #1DA1F2;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    #descriere {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        width: 80%;
+    }
+    .col-3 {
+        text-align: center;
+    }
+    .col-3 strong {
+        width: 70%;
+        text-align: center;
+        float: none;
+        padding: 0 0 30px 0;
+        display: block;
+    }
+    .row {
+        width: 600px;
+    }
+    .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 5rem;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,0.8);
+        overflow: hidden;
+        transition: 0.5s ease-out;
+    }
+    .links a {
+        color: rgb(184, 184, 184);
+    }
+    .icon-burger {
+        display: block;
+    }
+    .toggle {
+        bottom: 0;
+    }
+}
